@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Carrito de compras</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="img/icono.png">
+</head>
+
+<body class="body2" ata-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark " aria-label="Third navbar example">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="img/icono.png" width="70px" height="70px" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03"
+        aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navbarsExample03">
+        <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#section2">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Lanzamientos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactenos.html">Contacto</a>
+          </li>
+
+        </ul>
+        <form role="search">
+          <input class="form-control" type="search" placeholder="Busca tu producto" aria-label="Search">
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <main>
+      <div class="py-5 text-center">
+        <img class="d-block mx-auto mb-4" src="img/icono.png" alt="" width="100" height="100">
+        <h2 class="text-white">Formulario de pago </h2>
+        <p class="lead text-white">Ingrese tus datos y los medio de pago de esta compra</p>
+      </div>
+  
+      <div class="row g-5">
+        <div class="col-md-5 col-lg-4 order-md-last">
+          <h4 class="d-flex justify-content-between align-items-center mb-3">
+            <span class="text-white">Datos de la tarjeta</span>
+          </h4>
+          <ul class="list-group mb-3">
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+              <div>
+                <h6 class="my-0">Nombre del producto</h6>
+                <small class="text-muted">Ejemplo producto</small>
+              </div>
+              <span class="text-muted">$12.000</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+              <div>
+                <h6 class="my-0">Segundo producto</h6>
+                <small class="text-muted">Ejemplo producto</small>
+              </div>
+              <span class="text-muted">$8.000</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+              <div>
+                <h6 class="my-0">Tercer producto</h6>
+                <small class="text-muted">Ejemplo producto</small>
+              </div>
+              <span class="text-muted">$5.000</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between bg-light">
+              <div class="text-success">
+                <h6 class="my-0">Codigo de promocion</h6>
+                <small>EmpleoCodigo</small>
+              </div>
+              <span class="text-success">−$3.100</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              <span>Total (COP)</span>
+              <strong>$21.900</strong>
+            </li>
+          </ul>
+  
+          <form class="card p-2">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Codigo de promocion">
+              <button type="submit" class="btn btn-secondary">Redimir</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-7 col-lg-8">
+          <h4 class="mb-3 text-white">FORMULARIO DE DATOS DE ENTREGA</h4>
+          <form class="needs-validation" novalidate method="POST">
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <label for="firstName" class="form-label text-white">Primer Nombre</label>
+                <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Se requiere validar este campo
+                </div>
+              </div>
+  
+              <div class="col-sm-6">
+                <label for="lastName" class="form-label text-white">Segundo Nombre</label>
+                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Se requiere validar este campo
+                </div>
+              </div>
+  
+              <div class="col-12">
+                <label for="username" class="form-label text-white">Nombre de usuario</label>
+                <div class="input-group has-validation">
+                  <span class="input-group-text">@</span>
+                  <input type="text" class="form-control" id="username" placeholder="Usuario" required>
+                <div class="invalid-feedback">
+                  Se requiere validar este campo
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-12">
+                <label for="email" class="form-label text-white">Email <span class="text-muted">(Optional)</span></label>
+                <input type="email" class="form-control" id="email" placeholder="tucorreo@ejemplo.com">
+                <div class="invalid-feedback">
+                  Se requiere validar este campo
+                </div>
+              </div>
+  
+              <div class="col-12">
+                <label for="address" class="form-label text-white">Dirección</label>
+                <input type="text" class="form-control" id="address" placeholder="Cra - Cll - Tv - Av" required>
+                <div class="invalid-feedback">
+                  Se requiere validar este campo
+                </div>
+              </div>
+  
+              <div class="col-md-5">
+                <label for="country" class="form-label text-white">Pais</label>
+                <select class="form-select" id="country" required>
+                  <option value="">Seleccione...</option>
+                  <option>Colombia</option>
+                </select>
+                <div class="invalid-feedback">
+                  Se requiere validar este campo
+                </div>
+              </div>
+  
+              <div class="col-md-4">
+                <label for="state" class="form-label text-white">Ciudad</label>
+                <select class="form-select" id="state" required>
+                  <option value="">Seleccione...</option>
+                  <option>Bogota DC</option>
+                  <option>Medellin</option>
+                  <option>Cali</option>
+                  <option>Barranquilla</option>
+                  <option>Boyaca</option>
+                  <option>Cartagena</option>
+
+                </select>
+                <div class="invalid-feedback">
+                  Se requiere validar este campo
+                </div>
+              </div>
+            </div>
+  
+            <hr class="my-4">
+  
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="same-address">
+              <label class="form-check-label text-white" for="same-address">Quiere una llamada al estar afuera de su casa</label>
+            </div>
+  
+            <hr class="my-4">
+  
+            <h4 class="mb-3 text-white">Formas de pago</h4>
+  
+            <div class="my-3">
+              <div class="form-check">
+                <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+                <label class="form-check-label text-white" for="credit">Tarjeta Credito</label>
+              </div>
+              <div class="form-check">
+                <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+                <label class="form-check-label text-white" for="debit">Tarjeta Debito</label>
+              </div>
+              <div class="form-check">
+                <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+                <label class="form-check-label text-white" for="paypal">PayPal</label>
+              </div>
+              <div class="form-check">
+                <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+                <label class="form-check-label text-white" for="paypal">PayU</label>
+              </div>
+              <div class="form-check">
+                <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+                <label class="form-check-label text-white" for="paypal">MercadoPago</label>
+              </div>
+            </div>
+  
+            <hr class="my-4">
+  
+            <a href="../navbars/Pago.html" class="w-100 btn btn-primary btn-lg">Pagar</a>
+          </form>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <div id="section4" class="container-fluid bg-dark text-white mt-5" style="padding:20px 20px;">
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="index.html" class="nav-link px-2 text-white">Incio</a></li>
+        <li class="nav-item"><a href="productos.html" class="nav-link px-2 text-white">Productos</a></li>
+        <li class="nav-item"><a href="contactenos.html" class="nav-link px-2 text-white">Contacto</a></li>
+      </ul>
+      <p class="text-center text-muted">&copy; 2022 Mauricio Sabogal, Inc</p>
+    </footer>
+
+  </div>
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
